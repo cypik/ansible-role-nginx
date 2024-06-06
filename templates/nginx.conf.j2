@@ -1,0 +1,18 @@
+user {{ nginx_user }};
+worker_processes {{ nginx_worker_processes }};
+
+events {
+    worker_connections {{ nginx_worker_connections }};
+}
+
+http {
+    server {
+        listen 80;
+        server_name {{ nginx_server_name }};
+
+        location / {
+            root {{ nginx_document_root }};
+            index index.html index.htm;
+        }
+    }
+}

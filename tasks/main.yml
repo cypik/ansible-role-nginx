@@ -1,0 +1,20 @@
+---
+- name: Ensure NGINX is installed
+  apt:
+    name: nginx
+    state: present
+  become: true
+
+- name: Ensure NGINX service is enabled and running
+  service:
+    name: nginx
+    state: started
+    enabled: true
+  become: true
+
+- name: Create NGINX configuration file from template
+  template:
+    src: nginx.conf.j2
+    dest: /etc/nginx/nginx.conf
+  notify: reload nginx
+  become: true
