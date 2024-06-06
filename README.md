@@ -93,3 +93,4 @@ At [cypik][website], we offer expert guidance, implementation support and servic
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/cypik/ansible-role-nginx/blob/master/LICENSE) file for details.
 
+
