@@ -56,7 +56,7 @@ Following things includes in this role:
 
 ## Example Playbook
 
-**IMPORTANT:** Since the `master` branch used in `source` varies based on new modifications, we suggest that you use the release versions [here](https://github.com/clouddrove/ansible-role-nginx/releases).
+**IMPORTANT:** Since the `master` branch used in `source` varies based on new modifications, we suggest that you use the release versions [here](https://github.com/cypik/ansible-role-nginx/releases).
 
 
 ```yaml
@@ -81,7 +81,7 @@ Following things includes in this role:
 ## Installation
 
 ```console
-  $ ansible-galaxy install clouddrove.ansible_role_nginx
+  $ ansible-galaxy install cypik.ansible_role_nginx
 ```
 
 
